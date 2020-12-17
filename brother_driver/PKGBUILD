@@ -1,0 +1,15 @@
+# Maintainer: François Bechet <fbechet45@gmail.com>
+
+pkgname=brother-dcpj752dw-lpr-bin
+pkgver=1.0
+pkgrel=1
+pkgdesc="LPR driver for Brother dcpj752dw printer"
+arch=("i686" "x86_64")
+url="https://support.brother.com/g/b/downloadlist.aspx?c=eu_ot&lang=en&prod=dcpj752dw_eu_as&os=128"
+license=("EULA")
+groups=("base-devel")
+source=("https://download.brother.com/welcome/dlf006831/dcpj752dwlpr-3.0.0-1.i386.deb")
+md5sums=("54dc4f136b2341fdca2c3740c4b2611d")
+package() {
+	tar -xf data.tar.gz -C "${pkgdir}"
+}
