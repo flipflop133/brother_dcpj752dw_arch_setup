@@ -5,6 +5,8 @@ Then to connect to your printer through network you need to setup hostname resol
 - Install the Avahi package
 - Install the nss-mdns package
 - Enable and start avahi-daemon.service
+- Install cups package
+- Enable and start cups.service and cups.socket
 - Edit /etc/nsswitch.conf and change the hosts line to:
 hosts: ... mdns_minimal [NOTFOUND=return] resolve ...
 - Run avahi-discover in a terminal and you should see your printer
